@@ -1,0 +1,73 @@
+﻿@page
+@model StudentManagement.Pages.StudentModel
+@{
+}
+using Student_Managment.Modal;
+
+
+<span id="nameerror">&nbsp;</span>
+<h1 style="color:green">@ViewData["success"]</h1>
+<div class="container">
+    <form method="post">
+        <div class="card">
+            <div class="card-header bg-primary text-light">
+                <h1>
+                    Student Managment Page
+                </h1>
+            </div>
+            <div class="card-body">
+                <div class="row form-group">
+                    <label class="col-md-3">Name:</label>
+                    <div class="col-md-9">
+                        <input class="form-control" type="text" name="txtNm" onblur="checkRequired(this)" id="txtNm" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3">Age:</label>
+                    <div class="col-md-9">
+                        <input class="form-control" type="number" name="txtage" onblur="checkAge(this)" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3">Roll Number:</label>
+                    <div class="col-md-9">
+                        <input class="form-control" type="number" name="txtRoll" onblur="checkRoll(this)" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3">Class:</label>
+                    <div class="col-md-9">
+                        <input class="form-control" type="text" name="txtClass" onblur="checkClass(this)" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3">Maths Marks:</label>
+                    <div class="col-md-9">
+                        <input class="form-control" type="text" name="txtMath" onblur="checkMarks(this)" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3">English Marks:</label>
+                    <div class="col-md-9">
+                        <input class="form-control" type="text" name="txtEng" onblur="checkMarks(this)" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3">Science Marks:</label>
+                    <div class="col-md-9">
+                        <input class="form-control" type="text" name="txtSc" onblur="checkMarks(this)" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col text-center">
+                        <input type="submit" value="Add Student" class="btn btn-lg btn-primary" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <br />
+    <br />
+
+</div>

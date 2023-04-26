@@ -1,0 +1,46 @@
+﻿@using StudentManagement.Modal;
+@{
+    var st = (Student)@ViewData["student"];
+}
+
+<div>
+    <table class="table">
+        <tr>
+            <th>Roll Number</th>
+            <td>@st.rollNumber</td>
+        </tr>
+        <tr>
+            <th>Student Name</th>
+            <td>@st.name</td>
+        </tr>
+        <tr>
+            <th>Class</th>
+            <td>@st.st_class</td>
+        </tr>
+        <tr>
+            <th>Maths Marks</th>
+            <td>@st.maths</td>
+        </tr>
+        <tr>
+            <th>English Marks</th>
+            <td>@st.eng</td>
+        </tr>
+        <tr>
+            <th>Science Marks</th>
+            <td>@st.sc</td>
+        </tr>
+        <tr>
+            <th>Total Marks</th>
+            <td>@st.total</td>
+        </tr>
+        <tr>
+            <th>Percentage</th>
+            <td>@st.avg</td>
+        </tr>
+        <tr>
+            <th>Grade</th>
+            <td>@st.grade</td>
+        </tr>
+    </table>
+</div>
+
